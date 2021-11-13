@@ -1,5 +1,7 @@
 title: Hi
 baseurl:
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
+timezone: Asia/Seoul
+date_format: "%Y.%m.%d"
+sass:
+  sass_dir: assets/_sass
+  style: compressed
