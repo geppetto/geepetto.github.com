@@ -1,2 +1,5 @@
-theme: jekyll-theme-minimal
-
+title: Hi
+baseurl: /jekyll-test
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag

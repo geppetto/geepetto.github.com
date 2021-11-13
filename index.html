@@ -1,32 +1,6 @@
-<!DOCTYPE html>
-<html lang="ko">
-	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="assets/style.css">
-		<title>Study</title>
-	</head>
-	<body>
-	<script src="assets/js.js"></script>
-		<form>
-			<label for="first-name">First name</label>
-			<input id="first-name"  required placeholder="First name" type="text" /><br>
-			<label for="last-name">Last name</label>
-			<input id="last-name" required placeholder="Last name" type="text" /><br>
-			<label for="email">Email</label>
-			<input id="email" required placeholder="Email" type="email" /><br>
-			<label for="username">Username</label>
-			<input id="username" required placeholder="Username" type="text" /><br>
-			<label for="password">Password</label>
-			<input id="password" required placeholder="Password" minlength="10" type="password" /><br>
-			<label for="date">Birth date</label>
-			<input id="date" required placeholder="Birthdate" minlength="10" type="date" /><br>
-			<label for="range">How happy are you?</label>
-			<input id="range" required type="range" /><br>
-			<label for="color">What is your fav. color?</label>
-			<input id="color" required type="color" /><br>
-			<input type="submit" value="Create Account" />
-		</form>
-	</body>
-</html> 
+---
+layout: default
+list_title: Posts
+---
+
+{%- include list.html -%}
