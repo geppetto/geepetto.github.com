@@ -1,64 +1,63 @@
-html {
-	background-color: #000000;
-}
 body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
+	margin: 0;
+	background-color: #000;
 }
-section {
-	width: 400px;
-	height: 400px;
-}
-div {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: #ffffff
-}
-#first {
-	height: 100px;
-	background-color: rgba(0, 0, 0, 0);
-	animation: rotate 1s infinite;
-}
-#second {
-	height: 100px;
-	background-color: rgba(0, 0, 0, 0);
-}
-#sec {
+.loading-group {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
 	background-color: #60b4b6;
+	width: 400px;
+	height: 400px;
 }
-.circle {
-	margin: 10px;
+.loading-group > div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.loading-group > div > div {
+	background-color: #fff;
+}
+.dot-loading {
+	height: 100px;
+	background-color: rgba(0, 0, 0, 0);
+	animation: rotate 1s infinite;
+}
+.box-loading {
+	height: 100px;
+	background-color: rgba(0, 0, 0, 0);
+}
+.dot-loading > div {
+	margin: 0 10px;
 	border-radius: 50%;
-	width: 7px;
-	height: 7px;
+	width: 8px;
+	height: 8px;
 }
-.block {
-	margin: 3px;
+.box-loading > div {
+	margin: 0 3px;
 	width: 7px;
 	height: 30px;
-	animation: big-block 1s ease-out infinite;
+	animation: dance-box 1s ease-out infinite;
 }
-.block:nth-child(1) {
+.box-loading > div:nth-child(1) {
 	animation-delay: 0.1s;
-	}
-.block:nth-child(2) {
+}
+.box-loading > div:nth-child(2) {
 	animation-delay: 0.2s;
-	}
-.block:nth-child(3) {
+}
+.box-loading > div:nth-child(3) {
 	animation-delay: 0.3s;
-	}
-.block:nth-child(4) {
+}
+.box-loading > div:nth-child(4) {
 	animation-delay: 0.4s;
-	}
-.block:nth-child(5) {
+}
+.box-loading > div:nth-child(5) {
 	animation-delay: 0.5s;
-	}
+}
 @keyframes rotate {
 	0% {
 		transform: rotate(0deg);
@@ -67,20 +66,11 @@ div {
 		transform: rotate(180deg);
 	}
 }
-@keyframes big-block {
-	0% {
+@keyframes dance-box {
+	0%, 50% {
 		transform: scaleY(1);
 	}
 	25% {
 		transform: scaleY(2);
-	}
-	50% {
-		transform: scaleY(1);
-	}
-	75% {
-		transform: scaleY(1);
-	}
-	100% {
-		transform: scaleY(1);
 	}
 }
